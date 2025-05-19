@@ -1,0 +1,17 @@
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Services.deps.json
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Services.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Services.pdb
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Domain.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Infrastructure.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Domain.pdb
+D:\8\vkr\KanbanApp\KanbanApp.Services\bin\Debug\net9.0\KanbanApp.Infrastructure.pdb
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.csproj.AssemblyReference.cache
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.AssemblyInfoInputs.cache
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.AssemblyInfo.cs
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.csproj.CoreCompileInputs.cache
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanAp.406D027D.Up2Date
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\refint\KanbanApp.Services.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.pdb
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\ref\KanbanApp.Services.dll

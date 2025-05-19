@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "SQNZ/bBaOdeV9WdfxVi1LJDnsPFiPVo3oY+mt7aif+U=",
+  "Source": "KanbanApp.API",
+  "BasePath": "_content/KanbanApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

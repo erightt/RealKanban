@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KanbanApp.API.props" />
+</Project>

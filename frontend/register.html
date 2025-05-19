@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация в KanbanApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-kanban me-2"></i>RealKanban
+            </a>
+            <div class="navbar-nav" id="authButtons"></div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card border-0 shadow-lg animate__animated animate__fadeIn">
+                    <div class="card-body p-4 p-sm-5">
+                        <div class="text-center mb-5">
+                            <h1 class="h2 fw-bold mb-3">Присоединяйтесь к нам!</h1>
+                            <p class="text-muted">Создайте аккаунт для начала работы</p>
+                        </div>
+
+                        <form id="registerForm">
+                            <div class="mb-4">
+                                <label for="username" class="form-label">Имя пользователя</label>
+                                <input type="text" class="form-control" id="username" placeholder="Ваше имя" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="password" placeholder="••••••••"
+                                    required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="form-label">Повторите пароль</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="••••••••"
+                                    required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 py-2 mt-3">
+                                Зарегистрироваться
+                            </button>
+
+                            <div class="text-center mt-4">
+                                <small class="text-muted">
+                                    Уже есть аккаунт?
+                                    <a href="login.html" class="text-decoration-none fw-bold text-primary">
+                                        Войти
+                                    </a>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+
+</html>

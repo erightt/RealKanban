@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "projectName": "KanbanApp.Domain",
+        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
+        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
+        "projectName": "KanbanApp.Infrastructure",
+        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
+        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj",
+        "projectName": "KanbanApp.Services",
+        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj",
+        "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
+        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
+              },
+              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
+                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
