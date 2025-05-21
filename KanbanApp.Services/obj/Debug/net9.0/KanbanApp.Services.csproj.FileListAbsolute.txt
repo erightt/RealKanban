@@ -15,3 +15,4 @@ D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.dll
 D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\refint\KanbanApp.Services.dll
 D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.pdb
 D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\ref\KanbanApp.Services.dll
+D:\8\vkr\KanbanApp\KanbanApp.Services\obj\Debug\net9.0\KanbanApp.Services.sourcelink.json

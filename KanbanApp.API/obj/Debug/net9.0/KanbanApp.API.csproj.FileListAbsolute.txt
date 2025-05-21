@@ -64,3 +64,4 @@ D:\8\vkr\KanbanApp\KanbanApp.API\bin\Debug\net9.0\Microsoft.Extensions.Logging.A
 D:\8\vkr\KanbanApp\KanbanApp.API\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 D:\8\vkr\KanbanApp\KanbanApp.API\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
 D:\8\vkr\KanbanApp\KanbanApp.API\bin\Debug\net9.0\StackExchange.Redis.dll
+D:\8\vkr\KanbanApp\KanbanApp.API\obj\Debug\net9.0\KanbanApp.API.sourcelink.json

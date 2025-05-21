@@ -3,6 +3,7 @@ using KanbanApp.Domain.Login;
 using KanbanApp.Services.Auth;
 using Microsoft.AspNetCore.Authorization;
 using KanbanApp.API.Middleware;
+using System.Security.Claims;
 
 namespace KanbanApp.API.Controllers;
 
@@ -37,5 +38,22 @@ public class AuthController : ControllerBase
     {
         var result = await _authService.LoginAsync(model);
         return Ok(result);
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("users")]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        var users = await _authService.GetAllUsersAsync();
+        return Ok(users);
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpDelete("users/{id}")]
+    public async Task<IActionResult> DeleteUser(string id)
+    {
+        var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        await _authService.DeleteUserAsync(id, currentUserId);
+        return NoContent();
     }
 }

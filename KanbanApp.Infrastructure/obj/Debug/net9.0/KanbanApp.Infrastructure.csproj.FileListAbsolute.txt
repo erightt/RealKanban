@@ -13,3 +13,4 @@ D:\8\vkr\KanbanApp\KanbanApp.Infrastructure\obj\Debug\net9.0\KanbanApp.Infrastru
 D:\8\vkr\KanbanApp\KanbanApp.Infrastructure\obj\Debug\net9.0\refint\KanbanApp.Infrastructure.dll
 D:\8\vkr\KanbanApp\KanbanApp.Infrastructure\obj\Debug\net9.0\KanbanApp.Infrastructure.pdb
 D:\8\vkr\KanbanApp\KanbanApp.Infrastructure\obj\Debug\net9.0\ref\KanbanApp.Infrastructure.dll
+D:\8\vkr\KanbanApp\KanbanApp.Infrastructure\obj\Debug\net9.0\KanbanApp.Infrastructure.sourcelink.json

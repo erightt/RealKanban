@@ -32,7 +32,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "KanbanApp API", Version = "v1" });
-    
+
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "JWT Authorization header using the Bearer scheme",
@@ -41,7 +41,7 @@ builder.Services.AddSwaggerGen(c =>
         Type = SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
-    
+
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -68,12 +68,12 @@ builder.Services.AddSwaggerGen(c =>
 
 // MongoDB Configuration
 var mongoSettings = builder.Configuration.GetSection("MongoDb");
-builder.Services.AddSingleton<MongoDbContext>(sp => 
+builder.Services.AddSingleton<MongoDbContext>(sp =>
     new MongoDbContext(
         mongoSettings["ConnectionString"]!,
         mongoSettings["DatabaseName"]!));
 
-builder.Services.AddScoped<IMongoDatabase>(sp => 
+builder.Services.AddScoped<IMongoDatabase>(sp =>
     sp.GetRequiredService<MongoDbContext>().Database
 );
 
@@ -85,6 +85,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = Encoding.ASCII.GetBytes(jwtSettings["Secret"]!);
 
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("AdminOnly", policy =>
+        policy.RequireRole("Admin"));
+        
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

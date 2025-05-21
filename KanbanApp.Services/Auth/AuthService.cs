@@ -96,4 +96,27 @@ public class AuthService : IAuthService
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
+     public async Task<IEnumerable<User>> GetAllUsersAsync()
+    {
+        return await _userRepository.GetAllAsync();
+    }
+
+    public async Task DeleteUserAsync(string userIdToDelete, string currentUserId)
+{
+    // Проверяем, что пользователь существует
+    var userToDelete = await _userRepository.GetByIdAsync(userIdToDelete);
+    if (userToDelete == null)
+    {
+        throw new ArgumentException("User not found");
+    }
+
+    // Запрещаем удаление самого себя
+    if (userToDelete.Id == currentUserId)
+    {
+        throw new InvalidOperationException("You cannot delete yourself");
+    }
+
+    await _userRepository.DeleteAsync(userToDelete);
+}
 }

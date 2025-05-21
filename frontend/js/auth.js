@@ -1,14 +1,33 @@
-﻿
-function updateNavbar() {
+﻿function updateNavbar() {
     const authButtons = document.getElementById('authButtons');
     const token = localStorage.getItem('token');
-    
+    const role = localStorage.getItem('role');
+    const username = localStorage.getItem('username');
+
     if (token) {
-        const username = localStorage.getItem('username');
-        authButtons.innerHTML = `
-            <span class="nav-link">${username}</span>
-            <button class="btn btn-link nav-link" onclick="logout()">Выход</button>
-        `;
+        if (role === 'Admin') {
+            authButtons.innerHTML = `
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-link nav-link dropdown-toggle" 
+                                data-bs-toggle="dropdown">
+                            ${username}
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="admin.html">Админ-панель</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-link nav-link" onclick="logout()">Выход</button>
+                </div>
+            `;
+        } else {
+            authButtons.innerHTML = `
+                <div class="d-flex align-items-center gap-3">
+                    <span class="nav-link">${username}</span>
+                    <button class="btn btn-link nav-link" onclick="logout()">Выход</button>
+                </div>
+            `;
+        }
     } else {
         authButtons.innerHTML = `
             <a class="nav-link" href="login.html">Вход</a>
@@ -56,6 +75,7 @@ if (document.getElementById('loginForm')) {
             localStorage.setItem('token', data.token);
             localStorage.setItem('userId', data.userId);
             localStorage.setItem('username', data.username);
+            localStorage.setItem('role', data.role);
             window.location.href = 'dashboard.html';
         } else {
             alert(data.message || 'Ошибка входа');
