@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const title = document.getElementById('cardTitle').value;
             const description = document.getElementById('cardDescription').value;
             const columnId = document.getElementById('cardColumnId').value;
-
+            const color = document.getElementById('cardColor').value;
             try {
                 if (currentEditMode.type === 'card') {
                     // Редактирование существующей карточки
@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         },
                         body: JSON.stringify({
                             title: title,
-                            description: description
+                            description: description,
+                            color: color
                         })
                     });
                 } else {
@@ -143,7 +144,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         },
                         body: JSON.stringify({
                             title: title,
-                            description: description
+                            description: description,
+                            color: color
                         })
                     });
                 }
@@ -322,21 +324,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         cardsContainer.innerHTML = cards.map(card => `
-            <div class="kanban-card" data-card-id="${card.id}">
-                <h5 class="kanban-card-title">${card.title}</h5>
-                ${card.description ? `<p class="kanban-card-description">${card.description}</p>` : ''}
-                <div class="d-flex justify-content-end">
-                    <button class="btn btn-sm btn-outline-secondary me-1" 
-                            onclick="editCard('${card.id}', '${columnId}', event)">
-                        <i class="bi bi-pencil"></i>
-                    </button>
-                    <button class="btn btn-sm btn-outline-danger" 
-                            onclick="deleteCard('${card.id}', event)">
-                        <i class="bi bi-trash"></i>
-                    </button>
-                </div>
-            </div>
-        `).join('');
+    <div class="kanban-card" data-card-id="${card.id}" style="background-color: ${card.color || '#ffffff'}">
+        <h5 class="kanban-card-title">${card.title}</h5>
+        ${card.description ? `<p class="kanban-card-description">${card.description}</p>` : ''}
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-sm btn-outline-secondary me-1" 
+                    onclick="editCard('${card.id}', '${card.columnId}', event)">
+                <i class="bi bi-pencil"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-danger" 
+                    onclick="deleteCard('${card.id}', event)">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+    </div>
+`).join('');
     };
 
     // Инициализация перетаскивания карточек
@@ -409,6 +411,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('cardModalTitle').textContent = 'Новая карточка';
         document.getElementById('cardTitle').value = '';
         document.getElementById('cardDescription').value = '';
+        document.getElementById('cardColor').value = '#ffffff';
         document.getElementById('cardColumnId').value = columnId;
         cardModal.show();
     };
@@ -517,13 +520,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         const title = cardElement.querySelector('.kanban-card-title').textContent;
         const descriptionElement = cardElement.querySelector('.kanban-card-description');
         const description = descriptionElement ? descriptionElement.textContent : '';
-
+        const currentColor = cardElement.style.backgroundColor || '#ffffff';
         document.getElementById('cardModalTitle').textContent = 'Редактировать карточку';
         document.getElementById('cardTitle').value = title;
         document.getElementById('cardDescription').value = description;
+        document.getElementById('cardColor').value = rgbToHex(currentColor);
         document.getElementById('cardColumnId').value = columnId;
         cardModal.show();
     };
+    function rgbToHex(rgb) {
+    if (rgb.startsWith('#')) return rgb;
+    
+    const rgbValues = rgb.match(/\d+/g);
+    if (!rgbValues || rgbValues.length < 3) return '#ffffff';
+    
+    const r = parseInt(rgbValues[0]);
+    const g = parseInt(rgbValues[1]);
+    const b = parseInt(rgbValues[2]);
+    
+    return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
+}
 
     window.deleteCard = async (cardId, e) => {
         e.stopPropagation();

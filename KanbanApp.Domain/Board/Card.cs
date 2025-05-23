@@ -16,4 +16,6 @@ public class Card
     public int Order { get; set; } // Порядок карточки в колонке
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? DueDate { get; set; }
+
+     public string Color { get; set; } = "#ffffff";
 }

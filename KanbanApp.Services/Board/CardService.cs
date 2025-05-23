@@ -18,7 +18,7 @@ public class CardService : ICardService
         _cardRepository = cardRepository;
     }
 
-    public async Task<Card> CreateCardAsync(string columnId, string title, string? description, string ownerId)
+    public async Task<Card> CreateCardAsync(string columnId, string title, string? description, string? color, string ownerId)
     {
         if (string.IsNullOrWhiteSpace(title))
             throw new ArgumentException("Card title cannot be empty");
@@ -31,7 +31,8 @@ public class CardService : ICardService
         {
             ColumnId = columnId,
             Title = title,
-            Description = description
+            Description = description,
+            Color = color ?? "#ffffff"
         };
 
         return await _cardRepository.AddAsync(card);
@@ -46,7 +47,7 @@ public class CardService : ICardService
         return await _cardRepository.GetByColumnIdAsync(columnId);
     }
 
-    public async Task<Card> UpdateCardAsync(string cardId, string title, string? description, string ownerId)
+    public async Task<Card> UpdateCardAsync(string cardId, string title, string? description, string? color, string ownerId)
     {
         if (string.IsNullOrWhiteSpace(title))
             throw new ArgumentException("Card title cannot be empty");
@@ -61,6 +62,7 @@ public class CardService : ICardService
 
         card.Title = title;
         card.Description = description;
+        card.Color = color ?? card.Color;
         await _cardRepository.UpdateAsync(card);
         
         return card;

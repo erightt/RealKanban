@@ -66,7 +66,7 @@ main {
 
 .kanban-column {
     min-width: 300px;
-    background: #f8f9fa;
+    background: #fafaf8;
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -103,7 +103,7 @@ main {
     margin-bottom: 0.75rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     cursor: grab;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: var(--card-color, #ffffff);
 }
 
 .kanban-card:hover {
@@ -158,3 +158,36 @@ main {
     color: #4169e1 !important; /* Синий цвет для активной доски */
 }
 
+/* Добавьте эти стили в ваш dashboard.css */
+
+/* Скрываем кнопки действий по умолчанию */
+.board-actions,
+.kanban-column-actions,
+.kanban-card .btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Показываем кнопки при наведении */
+.board-item:hover .board-actions,
+.kanban-column-header:hover .kanban-column-actions,
+.kanban-card:hover .btn {
+  opacity: 1;
+}
+
+/* Уменьшаем размер кнопок в карточках */
+.kanban-card .btn {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+}
+
+/* Уменьшаем отступы между кнопками */
+.kanban-card .btn + .btn {
+  margin-left: 0.25rem;
+}
+
+/* Делаем кнопки в заголовке колонки более компактными */
+.kanban-column-actions .btn {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+}

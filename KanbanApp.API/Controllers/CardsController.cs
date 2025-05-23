@@ -32,7 +32,7 @@ public class CardsController : ControllerBase
     public async Task<IActionResult> CreateCard(string columnId, [FromBody] CreateCardRequest request)
     {
         var userId = GetUserId();
-        var card = await _cardService.CreateCardAsync(columnId, request.Title, request.Description, userId);
+        var card = await _cardService.CreateCardAsync(columnId, request.Title, request.Description, request.Color, userId);
         return Ok(card);
     }
 
@@ -53,7 +53,7 @@ public class CardsController : ControllerBase
     public async Task<IActionResult> UpdateCard(string columnId, string cardId, [FromBody] UpdateCardRequest request)
     {
         var userId = GetUserId();
-        var card = await _cardService.UpdateCardAsync(cardId, request.Title, request.Description, userId);
+        var card = await _cardService.UpdateCardAsync(cardId, request.Title, request.Description, request.Color, userId);
         return Ok(card);
     }
 
@@ -90,6 +90,6 @@ public class CardsController : ControllerBase
     }
 }
 
-public record CreateCardRequest(string Title, string? Description);
-public record UpdateCardRequest(string Title, string? Description);
+public record CreateCardRequest(string Title, string? Description, string? Color);
+public record UpdateCardRequest(string Title, string? Description, string? Color);
 public record MoveCardRequest(string NewColumnId, int NewOrder);
