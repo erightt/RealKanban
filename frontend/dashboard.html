@@ -43,16 +43,20 @@
 
             <!-- Основное содержимое -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2" id="currentBoardTitle">Выберите доску</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <button class="btn btn-sm btn-outline-secondary me-2" id="sidebarToggle">
                             <i class="bi bi-list"></i>
                         </button>
-                        <div class="dropdown">
-                            <button class="btn btn-sm btn-primary dropdown-toggle" id="addColumnBtn" disabled>
+                        <div class="dropdown me-2">
+                            <button class="btn btn-sm btn-primary dropdown" id="addColumnBtn" disabled>
                                 <i class="bi bi-plus-lg"></i> Добавить колонку
+                            </button>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-primary dropdown" id="addNotebookBtn" disabled>
+                                <i class="bi bi-journal-plus"></i> Добавить блокнот
                             </button>
                         </div>
                     </div>
@@ -66,6 +70,9 @@
                         <p class="text-muted">Или создайте новую доску, нажав на кнопку "+" в сайдбаре</p>
                     </div>
                 </div>
+
+                <!-- Контейнер для блокнотов -->
+                <div class="notebooks-container mt-4" id="notebooksContainer"></div>
             </main>
         </div>
     </div>
@@ -140,6 +147,55 @@
                         <div class="mb-3">
                             <label for="cardColor" class="form-label">Цвет карточки</label>
                             <input type="color" class="form-control form-control-color" id="cardColor" value="#ffffff" title="Выберите цвет">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно создания блокнота -->
+    <div class="modal fade" id="notebookModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="notebookModalTitle">Новый блокнот</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form id="notebookForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="notebookName" class="form-label">Название блокнота</label>
+                            <input type="text" class="form-control" id="notebookName" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно создания заметки -->
+    <div class="modal fade" id="noteModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="noteModalTitle">Новая заметка</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form id="noteForm">
+                    <input type="hidden" id="noteNotebookId">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="noteContent" class="form-label">Содержимое заметки</label>
+                            <textarea class="form-control" id="noteContent" rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">

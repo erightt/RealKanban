@@ -26,6 +26,10 @@ builder.Services.AddScoped<ICardRepository, CardRepository>();
 builder.Services.AddScoped<IBoardService, BoardService>();
 builder.Services.AddScoped<IColumnService, ColumnService>();
 builder.Services.AddScoped<ICardService, CardService>();
+builder.Services.AddScoped<INotebookRepository, NotebookRepository>();
+builder.Services.AddScoped<INoteRepository, NoteRepository>();
+builder.Services.AddScoped<INotebookService, NotebookService>();
+builder.Services.AddScoped<INoteService, NoteService>();
 // Add services to the container
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

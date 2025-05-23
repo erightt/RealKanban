@@ -191,3 +191,83 @@ main {
   padding: 0.2rem 0.4rem;
   font-size: 0.75rem;
 }
+
+/* Стили для блокнотов */
+.notebooks-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff6e3;
+    border-radius: 0.5rem;
+}
+
+.notebook-container {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.notebook-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.notebook-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+.notebook-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Стили для заметок */
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 50px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.note-card {
+    background: white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-content {
+    flex-grow: 1;
+    padding-right: 1rem;
+}
+
+.note-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.note-card-ghost {
+    opacity: 0.5;
+    background: #e2e3e5;
+}
+
+.empty-notes {
+    color: #ffffff;
+    font-size: 0.875rem;
+}
