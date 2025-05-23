@@ -11,3 +11,16 @@ D:\8\vkr\KanbanApp\KanbanApp.Domain\obj\Debug\net9.0\refint\KanbanApp.Domain.dll
 D:\8\vkr\KanbanApp\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.pdb
 D:\8\vkr\KanbanApp\KanbanApp.Domain\obj\Debug\net9.0\ref\KanbanApp.Domain.dll
 D:\8\vkr\KanbanApp\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.sourcelink.json
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\bin\Debug\net9.0\KanbanApp.Domain.deps.json
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\bin\Debug\net9.0\KanbanApp.Domain.dll
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\bin\Debug\net9.0\KanbanApp.Domain.pdb
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.csproj.AssemblyReference.cache
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.AssemblyInfoInputs.cache
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.AssemblyInfo.cs
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.csproj.CoreCompileInputs.cache
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.sourcelink.json
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.dll
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\refint\KanbanApp.Domain.dll
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\KanbanApp.Domain.pdb
+D:\Kanban0.2\RealKanban\KanbanApp.Domain\obj\Debug\net9.0\ref\KanbanApp.Domain.dll

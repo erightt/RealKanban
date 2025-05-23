@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WiVWVJhvF2E=",
+  "dgSpecHash": "wcxnDNxrqtk=",
   "success": true,
-  "projectFilePath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\KanbanApp.API.csproj",
+  "projectFilePath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\KanbanApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erigh\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\erigh\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

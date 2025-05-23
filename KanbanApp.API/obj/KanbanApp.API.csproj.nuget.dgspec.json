@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\KanbanApp.API.csproj": {}
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\KanbanApp.API.csproj": {}
   },
   "projects": {
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\KanbanApp.API.csproj": {
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\KanbanApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\KanbanApp.API.csproj",
+        "projectUniqueName": "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\KanbanApp.API.csproj",
         "projectName": "KanbanApp.API",
-        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\KanbanApp.API.csproj",
+        "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\KanbanApp.API.csproj",
         "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
-        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.API\\obj\\",
+        "outputPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
-                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
+              "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+                "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
               },
-              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj": {
-                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj"
+              "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\KanbanApp.Services.csproj": {
+                "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\KanbanApp.Services.csproj"
               }
             }
           }
@@ -99,14 +99,14 @@
         }
       }
     },
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "projectUniqueName": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
         "projectName": "KanbanApp.Domain",
-        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
         "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
-        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\obj\\",
+        "outputPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -164,14 +164,14 @@
         }
       }
     },
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
         "projectName": "KanbanApp.Infrastructure",
-        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
+        "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
-        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\obj\\",
+        "outputPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -186,8 +186,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
-                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
+              "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+                "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
               }
             }
           }
@@ -233,14 +233,14 @@
         }
       }
     },
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj": {
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\KanbanApp.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj",
+        "projectUniqueName": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\KanbanApp.Services.csproj",
         "projectName": "KanbanApp.Services",
-        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\KanbanApp.Services.csproj",
+        "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\KanbanApp.Services.csproj",
         "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
-        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Services\\obj\\",
+        "outputPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -255,11 +255,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
-                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
+              "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+                "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj"
               },
-              "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
-                "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj"
+              "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj": {
+                "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Infrastructure\\KanbanApp.Infrastructure.csproj"
               }
             }
           }

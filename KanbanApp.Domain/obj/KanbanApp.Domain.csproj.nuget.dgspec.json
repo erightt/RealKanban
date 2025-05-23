@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {}
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {}
   },
   "projects": {
-    "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
+    "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "projectUniqueName": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
         "projectName": "KanbanApp.Domain",
-        "projectPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
+        "projectPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\KanbanApp.Domain.csproj",
         "packagesPath": "C:\\Users\\erigh\\.nuget\\packages\\",
-        "outputPath": "D:\\8\\vkr\\KanbanApp\\KanbanApp.Domain\\obj\\",
+        "outputPath": "D:\\Kanban0.2\\RealKanban\\KanbanApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erigh\\AppData\\Roaming\\NuGet\\NuGet.Config"

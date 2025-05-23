@@ -45,7 +45,17 @@ function logout() {
 
 document.addEventListener('DOMContentLoaded', () => {
     updateNavbar();
-    
+
+    const startButton = document.querySelector('.hero-section .btn-primary');
+    if (startButton) {
+        startButton.addEventListener('click', (e) => {
+            const token = localStorage.getItem('token');
+            if (token) {
+                e.preventDefault();
+                window.location.href = 'dashboard.html';
+            }
+        });
+    }
 
     if (window.location.pathname.includes('dashboard.html')) {
         const token = localStorage.getItem('token');
@@ -60,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.getElementById('loginForm')) {
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const response = await fetch('http://localhost:5281/api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -86,7 +96,7 @@ if (document.getElementById('loginForm')) {
 if (document.getElementById('registerForm')) {
     document.getElementById('registerForm').addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
 

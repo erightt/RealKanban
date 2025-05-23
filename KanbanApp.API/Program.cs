@@ -10,6 +10,7 @@ using MongoDB.Driver;
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Any;
 using KanbanApp.API.Middleware;
+using KanbanApp.Services.Board;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddStackExchangeRedisCache(options =>
@@ -17,7 +18,14 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = builder.Configuration["Redis:Configuration"];
     options.InstanceName = builder.Configuration["Redis:InstanceName"];
 });
+builder.Services.AddScoped<IBoardRepository, BoardRepository>();
+builder.Services.AddScoped<IColumnRepository, ColumnRepository>();
+builder.Services.AddScoped<ICardRepository, CardRepository>();
 
+// Регистрация сервисов
+builder.Services.AddScoped<IBoardService, BoardService>();
+builder.Services.AddScoped<IColumnService, ColumnService>();
+builder.Services.AddScoped<ICardService, CardService>();
 // Add services to the container
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
